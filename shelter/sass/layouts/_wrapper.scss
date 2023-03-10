@@ -1,0 +1,10 @@
+.wrapper {
+    max-width: $content-width;
+    margin: 0 auto;
+}
+.page {
+    position: relative;
+    @include media-mobilesmall {
+        overflow: hidden;
+    }
+}

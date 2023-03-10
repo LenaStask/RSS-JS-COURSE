@@ -1,0 +1,52 @@
+.hamburger {
+    align-self: center;
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 36px;
+    cursor: pointer;
+    @include media-mobilesmall {
+        display: block;
+        position: absolute;
+        right: 53px;
+        top: 42px;
+        transition: 0.5s;
+        z-index: 10;
+        
+    }
+    
+}
+
+.hamburger__line {
+    background: $color-primary;
+    height: 2px; 
+    width: 100%;
+    margin: 8px 0; 
+    transition: all 0.3s ease-in-out;
+}
+.pets_hamburger__line {
+    background: #000000;
+}
+
+.hamburger.open {
+    transform: rotate(-90deg);
+    transition: 0.5s;
+    
+   
+}
+.shadow {
+    display: none;
+    position: absolute;
+    background-color: $color-overlay;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    
+    
+}
+.shadow.open {
+    visibility: visible;
+    display: block;
+}

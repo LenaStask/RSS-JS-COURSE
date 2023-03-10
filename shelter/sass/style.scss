@@ -1,0 +1,43 @@
+
+
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+
+@import "abstract/constants";
+@import "abstract/placeholder";
+@import "abstract/mixins";
+@import "base/font";
+@import "base/base";
+@import "base/buttons";
+@import "base/hamburger";
+@import "base/modal";
+@import "layouts/wrapper";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "components/not-only";
+@import "components/about";
+@import "components/pets";
+@import "components/help";
+@import "components/donation";
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.page {
+    background: $color-brown-gradient;    
+}
+
+
+
+
+
+
+
+

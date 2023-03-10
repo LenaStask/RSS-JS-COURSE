@@ -1,0 +1,45 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-size: 1.5rem;
+}
+body.lock {
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $color-primary ;
+    letter-spacing: 0.06em;
+    @include font($size:32px, $height:110%);
+} 
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $color-light-xl;
+    @include font($size:44px,$height:130%);
+    @include media-mobilesmall {
+        @include font($size:25px,$height:130%);
+        letter-spacing: 0.06em;
+    }
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $color-dark-l;
+    letter-spacing: 0.06em;
+    @include font($size:35px,$height:130%);
+    @include media-mobilesmall {
+        @include font($size:25px,$height:130%);
+    }
+}
+
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $color-dark-l;
+    letter-spacing: 0.06em;
+    @include font($size:20px,$height:23px);
+}
+

@@ -1,0 +1,95 @@
+.button {
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    height: 52px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    @extend %transition;
+}
+.button_colored {
+    background-color: $color-primary;
+}
+.button_bordered {
+    background-color: transparent;
+    width: 187px;
+}
+.not-only__button {  
+    width: 207px;  
+}
+.slider_button {
+    background-color: $color-light-l;
+    width: 52px;
+}
+.pets__button {
+    width: 261px;    
+}
+.button_bordered:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+}
+.button_colored:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;  
+}
+.slider_button:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light; 
+}
+.donation__button {
+    background-color: $color-primary;
+    border: 2px solid #F1CDB3;
+    border-radius: 9px;
+    width: 349px;
+    height: 43px;
+    cursor: pointer;
+    @extend %transition;
+}
+.donation__button:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;  
+}
+.button__pagination {
+    @include font($size:20px, $height:115%);
+    background-color:transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 52px;
+}
+.button__pagination:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;   
+}
+.button__pagination:disabled {
+    background-color:transparent;
+    border: 2px solid $color-dark-s;
+    color: $color-dark-s;  
+    cursor: default;
+}
+.button__numbered {
+    background-color: $color-primary;
+    @include font($size:20px, $height:115%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 52px;
+    cursor: default;
+}
+.popup__close__button {
+    background-color:transparent;
+    width: 52px;
+}
+
+.popup__close__button:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light; 
+}
+
+.popup__close__button.hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light; 
+}

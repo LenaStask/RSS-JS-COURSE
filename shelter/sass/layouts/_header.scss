@@ -1,0 +1,207 @@
+.header {
+    height: 180px;
+    
+    @include media-tablet {
+        height: 90px;
+    }
+    @include media-mobilesmall {
+        height: 90px;
+    }
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between; 
+    padding: 60px 40px;
+    position: relative;
+   
+    @include media-tablet {
+        padding: 30px 30px 0 30px;
+    }
+    @include media-mobilesmall {
+        padding: 30px 0 0 10px;
+    }
+}
+
+.logo {
+    vertical-align: middle;
+    text-align: center;
+   .logo__title{
+       text-decoration: none;
+       color: $color-primary;
+   }
+   .logo__text{
+       text-decoration: none;
+       color: $color-light-xl;
+   }
+    
+    h1 {
+        margin: 0;
+        padding: 0;
+        
+    }
+    p {
+        color: $color-light-xl;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.1em;
+        font-size: 13px;
+        text-align: center;
+        margin: 10px 0 0 0;
+        
+    }
+}
+.logo.open {
+    z-index: 3;
+    position: absolute;
+    right: 126px;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    margin-top: 15px;
+    @include media-mobilesmall {
+       display: block;
+       text-align: center;
+       
+    }   
+}
+.nav__container {
+    @include media-mobilesmall {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 320px;
+        background-color: $color-dark-3xl;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -320px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+.nav__container.open {
+    @include media-mobilesmall {
+        right: 0;
+        width: 320px;
+        transition: all 0.5s ease-in-out;
+      
+    } 
+    .nav {
+        @include media-mobilesmall {
+    
+        }
+        .nav__item {
+            @include media-mobilesmall {
+                margin: 20px;
+            }
+        }
+        .nav__link {
+            @include media-mobilesmall {
+                @include font($size:32px, $height: 160%);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            :hover {
+                @include media-mobilesmall {
+                    color: $color-light-s;
+                    
+                }
+            }
+        }
+    }  
+}
+.nav__item {
+    list-style: none;
+    margin-left: 36px;
+    @include media-mobilesmall {
+        margin: 20px;
+    }
+    
+}
+
+.nav__link {
+    text-decoration: none;
+    color: $color-dark-s;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px;  
+    line-height: 160%;
+    @include media-mobilesmall {
+        @include font($size:32px, $height: 160%);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+.nav__item_active {
+    .nav__link {
+        color: $color-light-s; 
+        border-bottom: 3px solid $color-primary;
+    }
+    
+    padding-bottom: 0;
+}
+
+.nav__link:hover {
+    color: $color-light-s;
+    @extend %transition;
+}
+
+.header_pets {
+    background-color: $color-light-xl;
+    position: sticky;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 120px;
+ 
+    
+ .header__wrapper {
+        padding: 30px 40px;
+        @include media-tablet {
+            padding: 30px;
+            
+        @include media-mobilesmall {
+            padding: 30px 0 0 10px;
+        }
+    }
+
+    .logo {
+        .logo__title{
+            text-decoration: none;
+            color: $color-dark-l;
+        }
+        .logo__text{
+            text-decoration: none;
+            color: $color-dark-l;
+        }
+        h1 {
+            color: $color-dark-l;
+        }
+        p {
+            color: $color-dark-l;
+        }
+    }
+    .nav__container {
+        @include media-mobilesmall {   
+            background-color: #ffffff;   
+        }
+    }
+    .nav__item_active {
+        .nav__link {
+            color: $color-dark-3xl; 
+        }
+        
+        padding-bottom: 0;
+    }
+    .nav__link {
+        color: $color-dark-l;
+    }
+    .nav__link:hover {
+        color: $color-dark-3xl;
+        @extend %transition;
+    }
+}
+}
+.header_pets.open {
+    position: static;
+    
+}

@@ -1,0 +1,104 @@
+.donation__wrapper {
+    padding: 0 40px;
+    @include media-mobilesmall {
+        padding: 0 10px;
+    }
+}
+.donation {
+    background-color: $color-light-l;
+}
+.donation__container {
+    padding: 80px 0 100px 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    @include media-tablet {
+        padding: 82px 0 100px 0;
+        flex-wrap: wrap-reverse;
+        padding-bottom: 97px;
+    }
+    @include media-mobilesmall {
+        flex-wrap: wrap-reverse;
+        padding: 44px 0 38px 0;
+        margin-top: -3px;
+    }
+    
+   
+
+}
+.donation__content {
+    max-width: 380px;
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    @include media-tablet {
+        margin-left: 0;
+    }
+    @include media-mobilesmall {
+        margin-left: 0;
+        text-align: center;
+        justify-items: center;
+    }
+    
+   
+}
+
+.donation__text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $color-dark-l;
+    @include font($size:15px,$height:110%);
+    letter-spacing: 0.06em;
+    @include media-mobilesmall {
+        @include font($size:15px,$height:160%);
+        letter-spacing: normal;
+    }
+    
+}
+.donation__button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @include media-mobilesmall {
+        align-self: center;
+        width: 281px;
+    }
+    a {
+        text-decoration: none;
+        color: $color-dark-l;
+        @include font($size:20px,$height:115%);
+        letter-spacing: 0.06em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        @include media-mobilesmall {
+            @include font($size:15px,$height:110%);
+        }
+    }
+}
+
+.donation__information {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $color-dark-m;
+    @include font($size:12px,$height:18px,$style: italic);
+    @include media-mobilesmall {
+        text-align: justify;
+        align-items: center;
+        padding: 0 10px;
+    }
+}
+
+.donation__image {
+    @include media-tablet {
+        margin-top: 60px;
+    }
+    @include media-mobilesmall {
+        width: 100%;
+        margin: 42px 20px 0 20px;
+        text-align: center;
+    }
+    img {
+        @include media-mobilesmall {
+            width: 260px;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory-game</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <main>
+        <section class="game-info">
+            <div>
+                <span class="game-moves">0</span> Moves
+            </div>
+            <button class="button result-btn ">Result</button>
+        </section>
+        <section class="game">
+            <div class="card" data-card="first">
+                <img class="front-side" src="./assets/img/1.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="first">
+                <img class="front-side" src="./assets/img/1.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="second">
+                <img class="front-side" src="./assets/img/2.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="second">
+                <img class="front-side" src="./assets/img/2.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="third">
+                <img class="front-side" src="./assets/img/3.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="third">
+                <img class="front-side" src="./assets/img/3.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="fourth">
+                <img class="front-side" src="./assets/img/4.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="fourth">
+                <img class="front-side" src="./assets/img/4.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="fifth">
+                <img class="front-side" src="./assets/img/5.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="fifth">
+                <img class="front-side" src="./assets/img/5.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="sixth">
+                <img class="front-side" src="./assets/img/6.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="sixth">
+                <img class="front-side" src="./assets/img/6.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="seventh">
+                <img class="front-side" src="./assets/img/7.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="seventh">
+                <img class="front-side" src="./assets/img/7.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="eighth">
+                <img class="front-side" src="./assets/img/8.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+            <div class="card" data-card="eighth">
+                <img class="front-side" src="./assets/img/8.png" alt="cat">
+                <img class="back-side" src="./assets/img/back.png" alt="back">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="github"><a href="https://github.com/LenaStask"><img src="./assets/svg/github.svg" alt="github"></a></div>
+        <div class="year">2022</div>
+        <div class="logo"><a href="https://rs.school/js-stage0/"><img src="./assets/svg/rsschool.svg" alt="rsschool"></a></div>
+    </footer> 
+    <div class="game-result">
+        <p>Congratulation!</p>
+        <p>Your result:<span class="moves-result"></span> moves</p>
+        <button class="button start-new-btn">New game</button>
+    </div>
+    <div class="game-all-results">
+        <p>Results:</p>
+        <table class="table-results" id="results"></table>
+        <button class="table-result-btn">Close</button>
+    </div>
+    <script src="index.js"></script>  
+</body>
+</html>
